@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+    <title>products</title>
+</head>
+
+<body class="productPage">
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img src="/static/img/28.png" alt="logo">
+                </div>
+                <h1>life is an art created by God</h1>
+                <div class="basket">
+                    <a href="/card">
+                        <i class='bx bxs-shopping-bag'></i>
+                        <p>{{count}}</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="products">
+                {% for product in products %}
+                    <div class="product2">
+                        <a href="#" class="img">
+                            <img src="{{product.image.url}}" alt="">
+                        </a>
+                        <a href="#" class="info">
+                            <div class="name"><h5>{{product.name}}</h5></div>
+                            <div class="price"><h5><h5 class="dollar">$</h5>{{product.price}}</h5></div>
+                        </a>
+                        <form method="post" action="">
+                            {% csrf_token %}
+                            <input type="hidden" name="product-id" value="{{product.id}}">
+                            <input type="hidden" name="href" value="main">
+                            <button name="type" value="add" class="number">+</button>
+                        </form>
+                    </div>
+                {% endfor %}
+            </div>
+        </main>
+        <footer>
+            <div class="connection">
+                <a href="#">
+                    <div class="email"><i class='bx bxs-envelope'></i></div>
+                <div class="telegram"><i class='bx bxl-telegram' ></i></div>
+                <div class="instagram"><i class='bx bxl-instagram-alt' ></i></div>
+                <div class="twitter"><i class='bx bxl-twitter'></i></div>
+                <div class="youtube"><i class='bx bxl-youtube' ></i></div>
+                <div class="tiktok"><i class='bx bxl-tiktok' ></i></div>
+            </a>
+            <a href="#">
+                <div class="num">
+                    <i class='bx bxs-phone bx-tada' ></i>
+                    <h4>phone: 54346145</h4>
+                </div>
+            </a>
+            </div>
+        </footer>
+    </div>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    direction: rtl;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2%;
+}
+
+.productPage{
+    background: url("/static/img/34.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.container{
+    width: 80%;
+}
+.productPage .container{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container .header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    
+}
+.container header{
+    width: 100%;
+    text-align: center;
+}
+.container header h1{
+    margin-top: 5%;
+}
+.container .header .logo{
+    width:20%;
+    height: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.container .header .logo img{
+    width:100%;
+    height: 100%;
+}
+.container .header .basket{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.5em;
+}
+.container .header .basket a i{
+    color: black;
+}
+.container .header .basket a :hover{
+    color: blue;
+}
+.productPage .container .products {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2%;
+    border-right: 1px solid rgb(116, 112, 148);
+    border-bottom: 1px solid rgb(116, 112, 148);
+    box-shadow: -30px 0 30px rgb(78, 73, 110);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 2%;
+}
+.container .img{
+    width: 50%;
+    height:100%;
+}
+.productPage .container img{
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    
+}
+.productPage .container .product1,
+.productPage .container .product2,
+.productPage .container .product3,
+.productPage .container .product4,
+.productPage .container .product5,
+.productPage .container .product6,
+.productPage .container .product7{
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgb(116, 112, 148);
+    border-bottom: 1px solid rgb(116, 112, 148);
+    box-shadow: -10px 0 10px rgb(78, 73, 110);
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    text-align: center;
+    margin-bottom: 5%;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.container .product1 .info,
+.container .product2 .info,
+.container .product3 .info,
+.container .product4 .info,
+.container .product5 .info,
+.container .product6 .info,
+.container .product7 .info{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#1A237E;
+}
+.container .info .name{
+    padding-inline: 5%;
+    margin-top: 5%;
+    text-align: center;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.container .info .price{
+    padding-inline: 5%;
+    display: flex;
+    align-items: end;
+    margin-bottom: 5%;
+    height: 50%;
+    font-size: .9em;
+}
+
+.container .info .dollar{
+    color: blue;
+}
+.productPage .container .products form .number{
+    position: absolute;
+    top: 40%;
+    right:42%;
+    width: 15%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1000;
+    background: linear-gradient(40deg,rgb(116, 112, 148),white);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid rgb(116, 112, 148);
+    border-bottom: 1px solid rgb(116, 112, 148);
+    box-shadow: -5px 0 5px rgb(78, 73, 110);
+    z-index: 10;
+    color:#1A237E ;
+}
+.container .connection a{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+a :hover{
+    color: blue;
+}
+footer {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+}
+.container footer .connection .num{
+    display: flex;
+    direction: ltr;
+}
+
+
+
+
+/* satrt paage 2 */
+
+.cardPage{
+    background: url("/static/img/59.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.cardPage .container .header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 18%;
+    font-size: 15px;
+}
+.cardPage .container .basket i{
+    font-size:1.3em ;
+}
+.cardPage .container main{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    
+}
+.cardPage .container .check{
+    width: 17%;
+    height: fit-content;
+    border-right: 2px solid  rgb(55, 145, 230);
+    border-bottom: 2px solid rgb(55, 145, 230);
+    box-shadow: -10px 0 10px rgb(109, 171, 230);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 1% .5%;
+}
+.cardPage .container main .check .title{
+    display: flex;
+    gap: 1.5%;
+    justify-content: end;
+    margin-bottom: 5%;
+}
+.cardPage .container main .check ._title,
+.cardPage .container main .check .happy_icon
+{
+    color:#0288D1;
+}
+.cardPage .container main .check .count{
+    display: flex;
+    justify-content: space-between;
+    margin-top:2% ;
+}
+.cardPage .container main .check button{
+    width: 100%;
+    height: 23px;
+    margin-top: 8%;
+    background-color: #4FC3F7;
+    border: none;
+}
+.cardPage .container .my-products{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 53%;
+    gap: 1%;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-right: 2px solid  rgb(55, 145, 230);
+    border-bottom: 2px solid rgb(55, 145, 230);
+    box-shadow: -30px 0 30px rgb(109, 171, 230);
+    padding: .5%;
+    
+}
+.cardPage .container .product1,
+.cardPage .container .product2,
+.cardPage .container .product3,
+.cardPage .container .product4,
+.cardPage .container .product5,
+.cardPage .container .product6{
+    height: 100%;
+    display: flex;
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid  rgb(40, 106, 167);
+    direction: ltr;
+    
+}
+
+.cardPage .container .product1,
+.cardPage .container .product3,
+.cardPage .container .product5{
+    margin-left: 1%;
+}
+.cardPage .container .img{
+    width: 38%;
+    height: 100%;
+}
+.cardPage .container img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    
+}
+.cardPage .container .product1 .info,
+.cardPage .container .product2 .info,
+.cardPage .container .product3 .info,
+.cardPage .container .product4 .info,
+.cardPage .container .product5 .info,
+.cardPage .container .product6 .info{
+    width: 38%;
+    height: 100%;
+    
+}
+.my-products form{
+    width: 12%;
+}
+.cardPage .container .decrease{
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    left:88%;
+    background-color: #4FC3F7;
+    border-bottom-right-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10%;
+}
+.cardPage .container .increase{
+    position: absolute;
+    left: 38%;
+    width: 12%;
+    height: 100%;
+    background-color: #4FC3F7;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.cardPage .container .discount{
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    width: 8%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    background-color: blue;
+    
+}
+.cardPage footer {
+    margin-top: 5%;
+}
